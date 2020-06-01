@@ -8,9 +8,11 @@ require_relative '../lib/scraper'
 scraper = Scraper.new
 details = scraper.mac_specs
 prices = scraper.mac_prices
+discounts = scraper.amt_saved
 
-(0...prices.size).each do |index|
+(0...discounts.size).each_with_index do |index|
   puts "- - - index: #{index + 1} - - - "
   puts "Details: #{details[index]}"
-  puts "Price:#{prices[index]} "
+  puts "Price:#{prices[index]}"
+  puts "Discount:#{discounts[index]} "
 end

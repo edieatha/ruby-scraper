@@ -21,7 +21,6 @@ available refurbished mac computers and there prices for anyone looking to buy o
 ```$ rspec```
 
 ## Built With
-
 - Ruby
 # Author
 
