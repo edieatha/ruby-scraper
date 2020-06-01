@@ -12,6 +12,6 @@ class Scraper
   end
 
   def mac_prices
-    parse_page.css('.as-price-currentprice').children.map { |price| price.text }.compact
+    parse_page.css('.as-price-currentprice').children.map { |price| price.text.gsub(/(\n)(\s)/, "") }.compact
   end
 end

@@ -11,5 +11,6 @@ prices = scraper.mac_prices
 
 (0...prices.size).each do |index|
   puts "- - - index: #{index + 1} - - - "
-  puts "Details: #{details[index]}  | \n  Price:#{prices[index]} "
+  puts "Details: #{details[index]}"
+  puts "Price:#{prices[index]} "
 end
