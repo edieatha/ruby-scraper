@@ -16,7 +16,6 @@ describe Scraper do
       scraper = Scraper.new
       expect(scraper.mac_specs).to include 'Refurbished 13.3-inch MacBook Pro 2.3GHz quad-core Intel Core i5 with Retina display - Silver'
     end
-
   end
 
   describe '#prices' do
@@ -35,5 +34,4 @@ describe Scraper do
       expect(scraper.amt_saved).to be_an_instance_of(Array)
     end
   end
-
 end
