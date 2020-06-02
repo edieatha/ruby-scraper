@@ -12,11 +12,11 @@ class Scraper
   end
 
   def mac_prices
-    parse_page.css('.as-price-currentprice').children.map { |price| price.text.gsub(/(\n)(\s)/, "") }.compact
+    parse_page.css('.as-price-currentprice').children.map { |price| price.text.gsub(/(\n)(\s)/, '') }.compact
   end
 
   def amt_saved
-    parse_page.css('.as-producttile-savingsprice').children.map { |save| save.text.gsub(/(\n)(\s)/, "") }.compact
+    parse_page.css('.as-producttile-savingsprice').children.map { |save| save.text.gsub(/(\n)(\s)/, '') }.compact
   end
 
 end
