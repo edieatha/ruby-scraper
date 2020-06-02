@@ -14,7 +14,7 @@ describe Scraper do
 
     it 'Mac Pro Computers are available!' do
       scraper = Scraper.new
-      expect(scraper.mac_specs).to include 'Refurbished 13.3-inch MacBook Pro 2.3GHz quad-core Intel Core i5 with Retina display - Silver'
+      expect(scraper.mac_specs).to include(/[M-cB-k-Pro]/)
     end
   end
 
