@@ -3,8 +3,8 @@ require 'nokogiri'
 require_relative '../lib/scraper.rb'
 
 describe Scraper do
-  url = 'https://www.apple.com/shop/refurbished/mac'
-  html = URI.open(url).read
+  let(:url) { 'https://www.apple.com/shop/refurbished/mac' }
+  let(:html) { URI.open(url).read }
 
   describe '#mac_specs' do
     it 'Return specifications as array.' do
